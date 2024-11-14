@@ -22,15 +22,8 @@ public class Problema01 {
         entrada.useLocale(Locale.US); 
         
         double num1;
-        double operacion;
         double num2;
-        double suma;
-        double resta;
-        double multiplicacion;
-        double division;
-        double modulo;
-        double potenciacion;
-                
+                       
         System.out.println("ingrese el primer numero");
         num1 = entrada.nextDouble();        
         System.out.println("ingrese el segundo numero");        
@@ -38,18 +31,16 @@ public class Problema01 {
         System.out.println("Ingrese la operacion aritmética");
         operacion = entrada.nextDouble();
         
-        suma = num1 + num2;
-        resta = num1 - num2;
-        multiplicacion = num1 * num2;
-        division = num1 / num2;
-        modulo = num1 % num2;
+        suma = num1 + operacion + num2;
+        resta = num1 + operacion + num2;
+        multiplicacion = num1 + operacion + num2;
+        division = num1 + operacion + num2;
+        modulo = num1 + operacion +num2;
         potenciacion = Math.pow(num1, num2);
-            
-        if (num1 >= num2) {
-            System.out.printf("La operación es una suma: %f", suma);
-            
-            
+        
+        operacion = entrada.nextInt();
+        if(num1 >= num2) {
+            switch (op)            
         }
     }
-    
 }
