@@ -23,24 +23,48 @@ public class Problema01 {
         
         double num1;
         double num2;
-                       
+        String operacion;
+        
         System.out.println("ingrese el primer numero");
         num1 = entrada.nextDouble();        
         System.out.println("ingrese el segundo numero");        
         num2 = entrada.nextDouble();
-        System.out.println("Ingrese la operacion aritmética");
-        operacion = entrada.nextDouble();
-        
-        suma = num1 + operacion + num2;
-        resta = num1 + operacion + num2;
-        multiplicacion = num1 + operacion + num2;
-        division = num1 + operacion + num2;
-        modulo = num1 + operacion +num2;
-        potenciacion = Math.pow(num1, num2);
-        
-        operacion = entrada.nextInt();
+        System.out.println("Ingrese el signo de la operacion aritmética");
+        entrada.nextLine();
+        operacion = entrada.nextLine();
+             
         if(num1 >= num2) {
-            switch (op)            
+            switch (operacion){
+                case "+":
+                    System.out.print(num1 + num2);
+                    break;
+                    
+                case "-":
+                    System.out.print(num1 - num2);
+                    break;
+                    
+                case "*":
+                    System.out.print(num1 * num2);
+                    break;
+                    
+                case "/":
+                    System.out.print(num1 / num2);
+                    break;
+                    
+                case "%":
+                    System.out.print(num1 % num2);
+                    break;
+                    
+                case "^":
+                    System.out.print(Math.pow(num1, num2));
+                    break;
+                    
+                default:
+                    System.out.println("Error, el primer numero debe ser mayor"
+                            + " al segundo numero");
+                    break;
+            }
+        }
+            
         }
     }
-}
