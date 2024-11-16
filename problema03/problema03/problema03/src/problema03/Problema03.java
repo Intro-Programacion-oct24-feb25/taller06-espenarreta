@@ -40,38 +40,35 @@ public class Problema03 {
         switch (tipoE){
             case "1":
                 incremento = 5;
-                adicional = (sueldo*incremento)/100;
+                adicional = (sueldo * incremento) / 100;
                 break;
                 
             case "2":
                 incremento = 7;
-                adicional = (sueldo*incremento)/100;
+                adicional = (sueldo * incremento) / 100;
                 break;
                 
             case "3":
                 incremento = 9;
-                adicional = (sueldo*incremento)/100;
+                adicional = (sueldo * incremento) / 100;
                 break;
                 
             case "4":
                 incremento = 12;
-                adicional = (sueldo*incremento)/100;
+                adicional = (sueldo * incremento) / 100;
                 break;
                 
             default:
                 incremento = 15;
-                adicional = (sueldo*incremento)/100;
+                adicional = (sueldo * incremento) / 100;
                 break;
         }
         
         sueldoFinal = sueldo + adicional;
-        System.out.printf("Informe\nNombre: %s\nTipo de Empleado: %s\n"
+        System.out.printf("\nInforme:\n\nNombre: %s\nTipo de Empleado: %s\n"
                         + "Sueldo Inicial: $%.2f\nIncremento: %d%%\n"
                         + "Sueldo Final: $%.2f\n", 
-                        nombre, tipoE, sueldo, incremento, sueldoFinal);
-        
-        
-        
+                        nombre, tipoE, sueldo, incremento, sueldoFinal);        
     }
     
 }

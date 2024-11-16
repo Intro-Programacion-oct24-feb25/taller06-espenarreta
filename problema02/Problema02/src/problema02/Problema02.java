@@ -61,8 +61,8 @@ public class Problema02 {
                 System.out.println("Tipo de vehículo no reconocido.");
         }
         System.out.println("\nPeaje 'Buena vía'\n\t" + "Propietario: " 
-                + propietario + "\nTipo: " + tipoVehiculo + "\n\tValor: $" + valorVehiculo 
-                + "\n\tPeaje: $" + peaje);
+                + propietario + "\nTipo: " + tipoVehiculo + "\n\tValor: $" 
+                + valorVehiculo + "\n\tPeaje: $" + peaje);
     }
     
 }
