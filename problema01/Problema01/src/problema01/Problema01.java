@@ -34,7 +34,7 @@ public class Problema01 {
         operacion = entrada.nextLine();
              
         if(num1 > num2) {
-            switch (operacion){
+            switch(operacion){
                 case "+":
                     System.out.print(num1 + num2);
                     break;
@@ -60,7 +60,7 @@ public class Problema01 {
                     break;
             }
         }
-         System.out.println("Error, el primer numero debe ser mayor"
-                            + " al segundo numero");   
+         System.out.println("Error, el primer numero debe ser mayor al segundo"
+                 + " numero");   
         }
     }
