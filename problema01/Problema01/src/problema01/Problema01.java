@@ -33,7 +33,7 @@ public class Problema01 {
         entrada.nextLine();
         operacion = entrada.nextLine();
              
-        if(num1 >= num2) {
+        if(num1 > num2) {
             switch (operacion){
                 case "+":
                     System.out.print(num1 + num2);
@@ -58,13 +58,9 @@ public class Problema01 {
                 case "^":
                     System.out.print(Math.pow(num1, num2));
                     break;
-                    
-                default:
-                    System.out.println("Error, el primer numero debe ser mayor"
-                            + " al segundo numero");
-                    break;
             }
         }
-            
+         System.out.println("Error, el primer numero debe ser mayor"
+                            + " al segundo numero");   
         }
     }
